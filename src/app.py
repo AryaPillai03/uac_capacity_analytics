@@ -255,7 +255,7 @@ else:
         ascending=False,
     ).head(5)
     st.markdown("**Most severe anomaly days**")
-    st.dataframe(top_anomalies, use_container_width=True, hide_index=True)
+    st.dataframe(top_anomalies, width='stretch', hide_index=True)
     anomaly_csv = prepare_download_csv(anomaly_df)
     st.download_button(
         "Download anomaly report",
